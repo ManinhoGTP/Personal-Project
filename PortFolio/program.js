@@ -12,9 +12,10 @@ if(usuario != newusuario || senha != newsenha){
     alert("Errada a senha ou usuario")
 }
 else{
-    window.location.href = "file:///C:/Repos%20T3eK/Personal-Project/PortFolio/Index.html"
+    window.location.href = "file:///C:/Programacion%20Senai/Personal-Project/PortFolio/Index.html"
 }
 }
+
 
 
 
