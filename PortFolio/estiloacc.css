@@ -1,13 +1,13 @@
 button{
-background-color: #22333c
-}
-button{
-    color: aliceblue;
+background-color: #22333c;
+color: aliceblue;
+border-left-color: aqua;
+border-right-color: aqua;
+border-radius: 10%;
 }
 body{
- 
-    
-    background-color: #22333b
+
+    background-color: #22333b;
 }
 output{
     color: rgb(230, 63, 63);
