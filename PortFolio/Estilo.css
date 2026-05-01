@@ -11,6 +11,10 @@ border-right-color: aqua;
 border-radius: 10%;
 margin: 0 5px;
 }
+button.hover{
+    background-color: #18455a;
+    scale: 1.05;
+}
 
 body{ 
     background-color: #22333b;
