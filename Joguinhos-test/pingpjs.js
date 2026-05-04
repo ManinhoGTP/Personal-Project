@@ -53,7 +53,9 @@ class bola extends objetoMovil {
     verificarRebote(){
         if(this.y + this.alto/2 > this.bordesTablero.maxY ||
             this.y - this.alto/2 < this.bordesTablero.minY
-        ){}
+        ){
+            this.rebotarY();
+        }
     }
 
     rebotarX(){
@@ -76,8 +78,8 @@ class bola extends objetoMovil {
     }
 
     resetear(x, y, dirX, dirY){
-        this.x = y;
-        this.y = x;
+        this.x = x;
+        this.y = y;
         this.dirX = dirX;
         this.dirY = dirY;
     }
@@ -98,7 +100,7 @@ class pala extends objetoMovil{
     
     IniciarMovimento(evento){
 if(evento.key == this.keyCodeArriba){
-    this.velActual = this.velActual;
+    this.velActual = this.velocidad;
 
 }else if(evento.key == this.keyCodeAbajo) {
     this.velActual = -this.velocidad;
@@ -114,9 +116,9 @@ if(evento.key == this.keyCodeArriba){
 
     mover(){
         this.y += this.velActual;
-        if(this.y + this.alto/2 > bordesTablero.maxY)
+        if(this.y + this.alto/2 > this.bordesTablero.maxY)
              this.y = this.bordesTablero.maxY- this.alto/2;
-        if(this.y - this.alto/2 < bordesTablero.minY)
+        if(this.y - this.alto/2 < this.bordesTablero.minY)
             this.y = this.alto/2;
         this.elemento.style.bottom = this.y+"px";
         
@@ -152,7 +154,7 @@ class marcador{
 var bordesTablero = new bordes(0, 800, 0, 600);
 var dir = Math.random() *2 * Math.PI;
 var bola = new bola(bordesTablero, document.querySelector(".bola"), 6,
- Math.cos(dir), Math.sin(dir), 0.1);
+ Math.cos(dir), Math.sin(dir));
 var pala1 = new pala (bordesTablero, document.querySelector(".pala1"),
  7, "w", "s");
 var pala2 = new pala (bordesTablero, document.querySelector(".pala2"),
@@ -169,16 +171,16 @@ var pala2 = new pala (bordesTablero, document.querySelector(".pala2"),
  }
 
  function comprobarPalazo(){
-    if(pala1.comprobarChoque(pelota.getBordes())){
-        if(pelota.dirX < 0) pelota.rebotarX();
+    if(pala1.comprobarChoque(bola.getBordes())){
+        if(bola.dirX < 0) bola.rebotarX();
 
-    }else if(pala2.comprobarChoque(pelota.getBordes())){
-        if(pelota.dirX > 0) pelota.rebotarX();
+    }else if(pala2.comprobarChoque(bola.getBordes())){
+        if(bola.dirX > 0) bola.rebotarX();
     }
  }
 
  function verificarGol(){
-    var resultado = pelota.verificarGol();
+    var resultado = bola.verificarGol();
     if(resultado != 0){
         if(resultado == 1){
             marcador1.ganharPontos();
