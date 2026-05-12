@@ -32,7 +32,7 @@ p{
     width: 500px;
     text-align: center;
     margin: 0 auto;
-    border-bottom-style: double;
+    /* border-bottom-style: double; */
 }
 h2{
 color: rgb(2, 38, 68);
@@ -43,13 +43,20 @@ margin-bottom: 10px;
 
 }
 
-h1{
+#bow{
     color:rgb(2, 38, 68);
     border-style: double;
     border-radius: 100px;
     border-width: 5px;
     border-width: fit-content;
     text-align: center;
+}
+
+#tituloIntroducao{
+    display: flex;
+    flex-direction: column;
+    margin-right: 950px;
+    font-style: italic
 }
 
 label{
@@ -65,7 +72,7 @@ label{
 }
 
 a{
-    color: #c7c7c7;
+    color: #000000;
     border-bottom-style: outs;
 }
 .elvisIntroducao{
@@ -85,6 +92,7 @@ align-items: center;
     justify-content: left;
     align-items: center;
     gap: 40px;
+
 }
 
 .blackSabbath_bandasClassicas{
@@ -123,15 +131,66 @@ align-items: center;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     margin-top: 10px;
 }
 
 #displayFoto{
-    border-style: solid;
-    /* border-color: #69021c; */
-    border-width: 20px;
-    border-bottom-width: 250px;
-    outline-color: #69021c;
+    outline-color: rgb(2, 38, 68);
+    border-color: #c7c7c7;
     outline-style: solid;
+    border-style: solid;
+    border-bottom-width: 20px;
+    width: 465px;
+    outline-offset: 6px;
+    
+}
+
+#biografiaElvis{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    font-style: italic;
+    width: 450px;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#tituloBiografiaElvis{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 50px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#colunaTextoIntroducao{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+#textoInicio{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 60px;
+    width: 585px;
+    
+  
+}
+
+#textoInicio2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 60px;
+    width: 585px;
+    
+    
 }
