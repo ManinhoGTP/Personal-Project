@@ -35,3 +35,4 @@ function abrirShop(){
     document.getElementById("bowshop").classList.add("ativa")
     
 }
+
