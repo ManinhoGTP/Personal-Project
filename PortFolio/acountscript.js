@@ -1,25 +1,21 @@
-let newsenha, newusuario, usuario, senha
+let novoUsuario, novaSenha, usuario, senha 
 
-function ciarconta(){
-    newusuario = prompt("Crie seu usuario")
-newsenha = prompt("Crie sua senha")
 
+function esconderTodo(){
+  const tela = document.querySelectorAll(".tela");
+  tela.forEach(function(tela){
+    tela.classList.remove("ativa")});
+ 
 }
-function acessarconta(){
-    usuario = prompt("Usuario")
-    senha = prompt("Senha")
-
-if(usuario != newusuario || senha != newsenha){
-
-    document.getElementById("Conta").innerHTML = "Senha ou Usuario Errado, Tenta de novo"
-
-    //alert("Errada a senha ou usuario")
-}
-else{
-window.location.href = "index.html"
-}
+function novoUsuario(){
+    esconderTodo();
+    document.getElementById("cadastrarConta").classList.add("ativa")
 }
 
+function criarConta(){
+esconderTodo();
+document.getElementById("inicioSeccion").classList.add("ativa")
 
 
+}
 

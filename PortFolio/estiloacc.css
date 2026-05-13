@@ -46,3 +46,10 @@ output{
     text-align: center;
     
 }
+.tela{
+    display: none;
+}
+.ativa{
+    display: block;
+}
+
