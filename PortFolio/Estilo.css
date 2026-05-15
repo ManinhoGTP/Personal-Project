@@ -1,3 +1,43 @@
+/* ============================Telas=========================== */
+.tela{
+    display: none;
+    
+}
+.ativa{
+    display: block;
+
+}
+
+/* ============================imagens=========================== */
+.elvisIntroducao{
+    width: 465px;
+    height: 250px;
+
+}
+
+.ledZepellin_bandasClassicas{
+    width: 400px;
+    height: 250px;
+    
+}
+
+.darkmetal_metalSubgeneros{
+    width: 390px;
+    height: 250px;
+}
+
+.glamrock_metalSubgeneros{
+    width: 400px;
+    height: 250px;
+}
+
+.blackSabbath_bandasClassicas{
+    width: 390px;
+    height: 250px;
+
+}
+
+/* ============================Layout Site=========================== */
 nav .btns{
     width: fit-content;
     margin: 0 auto;
@@ -6,17 +46,23 @@ nav .btns{
 }
 
 button{
-background-color: #22333c;
-color: #c7c7c7;
-margin: 0 10px;
-padding: 5.5px 10px;
-cursor: pointer;
+    background-color: #22333c;
+    color: #c7c7c7;
+    margin: 0 10px;
+    padding: 5.5px 10px;
+    cursor: pointer;
 }
+
 button:hover{
     background-color: #69021c;
     scale: 1.05;
     border-radius: 7px;
     
+}
+
+label{
+    color: rgb(2, 38, 68);
+ 
 }
 
 body{ 
@@ -28,14 +74,15 @@ body{
 }
 
 p{
-    color: rgb(0, 23, 43);
+    color: rgb(0, 0, 0);
     width: 500px;
     text-align: center;
     margin: 0 auto;
-    /* border-bottom-style: double; */
+
 }
+
 h2{
-color: rgb(2, 38, 68);
+color: rgb(0, 0, 0);
 text-align: center;
 border-bottom-style: solid;
 border-bottom-width: fit-content;
@@ -52,42 +99,24 @@ margin-bottom: 10px;
     text-align: center;
 }
 
+/* ============================Organização Site=========================== */
 #tituloIntroducao{
     display: flex;
     flex-direction: column;
     margin-right: 950px;
     font-style: italic
+    
 }
 
-label{
- 
-    color: rgb(2, 38, 68);
-}
-
-.tela{
-    display: none;
-}
-.ativa{
-    display: block;
-}
-
-a{
-    color: #000000;
-    border-bottom-style: outs;
-}
-.elvisIntroducao{
-width: 465px;
-height: 250px;
-
-}
 #inicios.ativa{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
 }
 
-#display{
+#conteinerIntroducao{
     display: flex;
     justify-content: left;
     align-items: center;
@@ -95,46 +124,27 @@ height: 250px;
 
 }
 
-.blackSabbath_bandasClassicas{
-    width: 390px;
-    height: 250px;
-
-}
-
-.ledZepellin_bandasClassicas{
-    width: 400px;
-    height: 250px;
-    
-}
-
-#display2{
+#conteinerBandasClassicas{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 8px;
     margin-top: 20px;
+
 }
 
-.darkmetal_metalSubgeneros{
-    width: 390px;
-    height: 250px;
-}
-
-.glamrock_metalSubgeneros{
-    width: 400px;
-    height: 250px;
-}
-
-#display3 a{
+#conteinerMetalESeusSubgeneros a{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    gap: 10px;
+
 }
 
-#displayFoto{
+#outlineIntroducao{
     outline-color: rgb(2, 38, 68);
     border-color: #c7c7c7;
     outline-style: solid;
@@ -154,6 +164,7 @@ height: 250px;
     margin-top: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+
 }
 
 #tituloBiografiaElvis{
@@ -164,6 +175,8 @@ height: 250px;
     font-size: 35px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    color: #000000;
+    
 }
 
 #colunaTextoIntroducao{
@@ -171,6 +184,7 @@ height: 250px;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 80px;
+    
 }
 
 #textoInicio{
@@ -180,7 +194,6 @@ height: 250px;
     text-align: left;
     margin-right: 60px;
     width: 585px;
-    
   
 }
 
@@ -191,6 +204,5 @@ height: 250px;
     text-align: left;
     margin-right: 60px;
     width: 585px;
-    
-    
+       
 }
