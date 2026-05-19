@@ -53,6 +53,7 @@ output{
 .ativa{
     display: block;
 }
+/* Cadastrar */
 #cadastrarConta{
     text-align: center;
 }
@@ -76,5 +77,33 @@ output{
     border-style: hidden;
 }
 .texto{
+    margin-right: 210px;
+}
+ /* Iniciar sessão */
+#iniciarSessao{
+    text-align: center;
+}
+.inicio-inputs{
+    border-width: 1px;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    border-style: solid;
+    border-color: gray;
+}
+.inicio-botoes{
+    border-style: solid;
+    border-color: gray;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 309px;
+    height: 30px;
+    margin-top: 10px;
+}
+#login{
+    background-color: green;
+}
+.inicio-texto{
     margin-right: 210px;
 }

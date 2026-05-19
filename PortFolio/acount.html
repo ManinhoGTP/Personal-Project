@@ -18,16 +18,18 @@
   <hr>
 
   <section id="inicioSeccion" class="tela ativa">
-    <hr>
-<div class="btns", id="">
+<div class="btns", id="iniciarSessao">
   
-  <input type="text" id="usuarios">
-  <input type="text" id="senhas">
-  
-  <button onclick="iniciaSeccion()">Login</button>
+  <p class="inicio-texto">Username:</p>
+  <input type="text" id="usuarios" class="inicio-inputs">
+  <p class="inicio-texto">Password:</p>
+  <input type="text" id="senhas" class="inicio-inputs">
+  <br>
+  <button onclick="iniciaSeccion()" id="login" class="inicio-botoes">Login</button>
   <output id="errado"></output>
-
-  <button onclick="novoUsuario()">Cadastrar</button>
+  <br>
+  <hr>
+  <button onclick="novoUsuario()" id="cadastrar" class="inicio-botoes">Cadastrar</button>
   
 </div>
 
